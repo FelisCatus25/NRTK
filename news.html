@@ -22,174 +22,6 @@
             margin: 10px 0 0;
         }
 
-        .btn-add-news {
-            background: #FFD700;
-            color: #5C0000;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .btn-add-news:hover {
-            background: #FFF8DC;
-            transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(255,215,0,0.3);
-        }
-
-        /* ---------- ФОРМА ДОБАВЛЕНИЯ ---------- */
-        .add-news-form {
-            display: none;
-            background: linear-gradient(145deg, #5C0000, #4A0000);
-            padding: 30px;
-            border-radius: 16px;
-            border: 2px solid #FFD700;
-            margin-bottom: 40px;
-            box-shadow: 0 6px 25px rgba(0,0,0,0.5);
-        }
-
-        .add-news-form.active {
-            display: block;
-            animation: slideDown 0.4s ease;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .add-news-form h2 {
-            color: #FFD700;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .add-news-form input,
-        .add-news-form textarea,
-        .add-news-form select {
-            width: 100%;
-            padding: 14px 18px;
-            margin-bottom: 15px;
-            background: rgba(255,255,255,0.08);
-            border: 2px solid #FFD700;
-            border-radius: 8px;
-            color: #FFF8DC;
-            font-size: 1rem;
-            font-family: inherit;
-            transition: all 0.3s ease;
-        }
-
-        .add-news-form input:focus,
-        .add-news-form textarea:focus,
-        .add-news-form select:focus {
-            outline: none;
-            background: rgba(255,255,255,0.12);
-            border-color: #FFF8DC;
-            box-shadow: 0 0 20px rgba(255,215,0,0.15);
-        }
-
-        .add-news-form select option {
-            background: #5C0000;
-            color: #FFF8DC;
-        }
-
-        /* Загрузка фото */
-        .file-upload-wrapper {
-            margin-bottom: 15px;
-        }
-
-        .file-upload-wrapper label {
-            display: block;
-            padding: 20px;
-            background: rgba(255,215,0,0.05);
-            border: 2px dashed #FFD700;
-            border-radius: 8px;
-            text-align: center;
-            color: #D4A017;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .file-upload-wrapper label:hover {
-            background: rgba(255,215,0,0.1);
-            border-color: #FFF8DC;
-        }
-
-        .file-upload-wrapper input[type="file"] {
-            display: none;
-        }
-
-        .file-name {
-            color: #FFF8DC;
-            font-size: 0.9rem;
-            margin-top: 8px;
-            display: block;
-        }
-
-        .image-preview {
-            max-width: 100%;
-            max-height: 200px;
-            border-radius: 8px;
-            margin-top: 10px;
-            border: 2px solid rgba(255,215,0,0.3);
-            display: none;
-        }
-
-        .image-preview.show {
-            display: block;
-        }
-
-        .form-actions {
-            display: flex;
-            gap: 15px;
-            justify-content: flex-end;
-        }
-
-        .btn-submit-news {
-            padding: 14px 30px;
-            background: linear-gradient(135deg, #FFD700, #DAA520);
-            color: #5C0000;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-submit-news:hover {
-            background: linear-gradient(135deg, #FFF8DC, #FFD700);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(255,215,0,0.3);
-        }
-
-        .btn-cancel-news {
-            padding: 14px 30px;
-            background: transparent;
-            color: #FFD700;
-            border: 2px solid #FFD700;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-cancel-news:hover {
-            background: rgba(255,215,0,0.1);
-        }
-
         /* ---------- КАРТОЧКИ НОВОСТЕЙ ---------- */
         .news-grid {
             display: flex;
@@ -296,29 +128,6 @@
             color: #FFD93D;
         }
 
-        /* ---------- СТАТУСЫ ---------- */
-        .loading {
-            text-align: center;
-            padding: 60px 20px;
-            color: #D4A017;
-            font-size: 1.2rem;
-        }
-
-        .loading-spinner {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            border: 4px solid rgba(255,215,0,0.1);
-            border-radius: 50%;
-            border-top-color: #FFD700;
-            animation: spin 1s ease-in-out infinite;
-            margin-bottom: 20px;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
         .empty-news {
             text-align: center;
             padding: 60px 20px;
@@ -332,76 +141,6 @@
             margin-bottom: 20px;
         }
 
-        .sync-status {
-            text-align: center;
-            color: #D4A017;
-            font-size: 0.9rem;
-            padding: 12px;
-            border-radius: 8px;
-            background: rgba(255,215,0,0.05);
-            margin-bottom: 25px;
-        }
-
-        .sync-status.success {
-            color: #6BFF6B;
-            border: 1px solid rgba(107, 255, 107, 0.3);
-        }
-
-        .sync-status.error {
-            color: #FF6B6B;
-            border: 1px solid rgba(255, 107, 107, 0.3);
-        }
-
-        .sync-status.info {
-            color: #6BB5FF;
-            border: 1px solid rgba(107, 181, 255, 0.3);
-        }
-
-        .sync-status.warning {
-            color: #FFD93D;
-            border: 1px solid rgba(255, 217, 61, 0.3);
-        }
-
-        /* ---------- КНОПКА УДАЛЕНИЯ ---------- */
-        .delete-btn {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: rgba(255,0,0,0.15);
-            color: #FF4444;
-            border: 1px solid #FF4444;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .delete-btn:hover {
-            background: rgba(255,0,0,0.3);
-            transform: scale(1.1);
-        }
-
-        .news-card:hover .delete-btn {
-            display: flex;
-        }
-
-        @media (max-width: 768px) {
-            .delete-btn {
-                display: flex;
-                top: 10px;
-                right: 10px;
-                width: 25px;
-                height: 25px;
-                font-size: 0.8rem;
-            }
-        }
-
-        /* ---------- АДАПТИВНОСТЬ ---------- */
         @media (max-width: 768px) {
             .news-header {
                 flex-direction: column;
@@ -410,10 +149,6 @@
             
             .news-card h2 {
                 font-size: 1.4rem;
-            }
-            
-            .form-actions {
-                flex-direction: column;
             }
 
             .news-image {
@@ -441,56 +176,102 @@
                 <div class="news-header">
                     <div>
                         <h1>📰 Новости социализма</h1>
-                        <p class="subtitle">Общие новости — видят все посетители!</p>
+                        <p class="subtitle">Актуальные события и объявления</p>
+                    </div>
+                </div>
                 <div class="divider"></div>
             </div>
         </section>
 
         <section class="news-content">
             <div class="container">
-                <!-- Статус синхронизации -->
-                <div id="syncStatus" class="sync-status info">
-                    🔄 Загрузка новостей...
-                </div>
-
-                <!-- ФОРМА ДОБАВЛЕНИЯ НОВОСТИ -->
-                <div class="add-news-form" id="addNewsForm">
-                    <h2>✍️ Создать новость</h2>
+                <!-- ============================================================ -->
+                <!--  ⬇️⬇️⬇️  СЮДА ДОБАВЛЯЙТЕ НОВЫЕ НОВОСТИ  ⬇️⬇️⬇️                 -->
+                <!-- ============================================================ -->
+                
+                <div class="news-grid">
                     
-                    <input type="text" id="newsTitle" placeholder="Заголовок новости" required>
+                    <!-- 
+                    ═══════════════════════════════════════════════════════════════
+                    📝  КАК ДОБАВИТЬ НОВОСТЬ:
+                    ═══════════════════════════════════════════════════════════════
+                    1. СКОПИРУЙТЕ ВЕСЬ БЛОК <article>...</article> (от и до)
+                    2. ВСТАВЬТЕ его ПЕРЕД строкой "<!-- КОНЕЦ БЛОКА ДЛЯ НОВОСТЕЙ -->"
+                    3. ЗАМЕНИТЕ текст внутри на свои данные
+                    ═══════════════════════════════════════════════════════════════
+                    -->
                     
-                    <textarea id="newsText" rows="4" placeholder="Текст новости..." required></textarea>
+                    <!-- ========== НОВОСТЬ №1 (ПРИМЕР) ========== -->
+                    <article class="news-card">
+                        <div class="news-date">📅 06 сентября 2026</div>
+                        <h2>Открытие нового социалистического проекта</h2>
+                        
+                        <!-- 
+                            ДЛЯ ДОБАВЛЕНИЯ ФОТО:
+                            1. Загрузите фото на сайт (например, imgur.com)
+                            2. Получите прямую ссылку (заканчивается на .jpg/.png)
+                            3. Вставьте ссылку в src="..."
+                            4. Если фото НЕТ, удалите всю строку с <img>
+                        -->
+                        <img src="https://via.placeholder.com/800x400/8B0000/FFD700?text=Новость+1" 
+                             alt="Открытие проекта" 
+                             class="news-image">
+                        
+                        <p>
+                            Сегодня состоялось торжественное открытие нового социалистического проекта. 
+                            В мероприятии приняли участие представители трудовых коллективов и партийные активисты.
+                        </p>
+                        
+                        <div class="news-tags">
+                            <span class="tag tag-important">⭐ Важная</span>
+                            <span class="tag tag-event">🎉 Событие</span>
+                        </div>
+                    </article>
                     
-                    <!-- Загрузка фото -->
-                    <div class="file-upload-wrapper">
-                        <label for="newsImageInput">
-                            📷 Нажмите, чтобы выбрать фото (необязательно)
-                            <input type="file" id="newsImageInput" accept="image/*" onchange="previewImage(event)">
-                        </label>
-                        <span class="file-name" id="fileName">Файл не выбран</span>
-                        <img id="imagePreview" class="image-preview" alt="Предпросмотр">
-                    </div>
+                    <!-- ========== НОВОСТЬ №2 (ПРИМЕР) ========== -->
+                    <article class="news-card">
+                        <div class="news-date">📅 05 сентября 2026</div>
+                        <h2>Планы на следующий квартал</h2>
+                        
+                        <!-- ЕСЛИ ФОТО НЕТ, удалите строку с <img> полностью -->
+                        <!-- <img src="ссылка_на_фото.jpg" alt="Описание" class="news-image"> -->
+                        
+                        <p>
+                            Обсуждены планы развития на следующий квартал. Основные направления — 
+                            укрепление производственных мощностей и повышение благосостояния трудящихся.
+                        </p>
+                        
+                        <div class="news-tags">
+                            <span class="tag tag-update">🔄 Обновление</span>
+                        </div>
+                    </article>
                     
-                    <select id="newsTag">
-                        <option value="Обычная">📌 Обычная</option>
-                        <option value="⭐ Важная">⭐ Важная</option>
-                        <option value="🎉 Событие">🎉 Событие</option>
-                        <option value="🔄 Обновление">🔄 Обновление</option>
-                        <option value="📢 Анонс">📢 Анонс</option>
-                    </select>
+                    <!-- ========== НОВОСТЬ №3 (ПРИМЕР) ========== -->
+                    <article class="news-card">
+                        <div class="news-date">📅 04 сентября 2026</div>
+                        <h2>Поздравление с Днём труда</h2>
+                        
+                        <img src="https://via.placeholder.com/800x400/5C0000/FFD700?text=С+праздником!" 
+                             alt="Поздравление" 
+                             class="news-image">
+                        
+                        <p>
+                            Поздравляем всех трудящихся с Днём труда! Желаем успехов в работе, 
+                            крепкого здоровья и новых свершений на благо социалистического общества.
+                        </p>
+                        
+                        <div class="news-tags">
+                            <span class="tag tag-announce">📢 Анонс</span>
+                            <span class="tag tag-important">⭐ Важная</span>
+                        </div>
+                    </article>
                     
-                    <div class="form-actions">
-                        <button class="btn-cancel-news" onclick="toggleForm()">Отмена</button>
-                        <button class="btn-submit-news" onclick="addNews()">📤 Опубликовать</button>
-                    </div>
-                </div>
-
-                <!-- Список новостей -->
-                <div id="newsGrid">
-                    <div class="loading">
-                        <div class="loading-spinner"></div>
-                        Загрузка новостей...
-                    </div>
+                    <!-- ============================================================ -->
+                    <!--  ⬆️⬆️⬆️  ВЫШЕ ДОБАВЛЯЙТЕ НОВЫЕ НОВОСТИ  ⬆️⬆️⬆️              -->
+                    <!-- ============================================================ -->
+                    
+                    <!-- КОНЕЦ БЛОКА ДЛЯ НОВОСТЕЙ -->
+                    
                 </div>
             </div>
         </section>
@@ -499,390 +280,5 @@
     <footer>
         <p>© 2026 ЦК КП НРТК(и). Все права защищены.</p>
     </footer>
-
-    <script>
-        // ==============================================
-        // НАСТРОЙКА GOOGLE SHEETS
-        // ==============================================
-        
-        // ВАШ ID ТАБЛИЦЫ (из вашей ссылки)
-        const SHEET_ID = '2PACX-1vRJdEMnCC4Dj8mINvMBJ3REuvLRw_YepDjxAZg7xppUrcWVBfIgJZeY5ouiPnxhXl-msk5OrecFSwWR';
-        
-        // Ссылка для получения данных
-        const GOOGLE_SHEET_URL = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?output=csv`;
-        
-        // Ссылка для редактирования (откроется, если нужно)
-        const GOOGLE_SHEET_EDIT_URL = `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/edit`;
-        
-        // ==============================================
-        // ПЕРЕМЕННЫЕ
-        // ==============================================
-        
-        let newsData = [];
-        let uploadedImageData = null; // Для хранения загруженного фото
-        
-        // ==============================================
-        // ЗАГРУЗКА НОВОСТЕЙ
-        // ==============================================
-        
-        async function loadNews() {
-            const grid = document.getElementById('newsGrid');
-            const status = document.getElementById('syncStatus');
-            
-            try {
-                status.textContent = '🔄 Загрузка новостей...';
-                status.className = 'sync-status info';
-                
-                const response = await fetch(GOOGLE_SHEET_URL);
-                
-                if (!response.ok) {
-                    throw new Error(`Ошибка HTTP: ${response.status}`);
-                }
-                
-                const csvText = await response.text();
-                newsData = parseCSV(csvText);
-                
-                if (newsData.length === 0) {
-                    grid.innerHTML = `
-                        <div class="empty-news">
-                            <span>📭</span>
-                            Новостей пока нет.<br>
-                            <small style="color: #D4A017;">Нажмите "Добавить новость", чтобы создать первую!</small>
-                        </div>
-                    `;
-                    status.textContent = '📭 Новостей нет';
-                    status.className = 'sync-status success';
-                    return;
-                }
-                
-                renderNews(newsData, grid);
-                status.textContent = `✅ Загружено ${newsData.length} новостей (общие для всех!)`;
-                status.className = 'sync-status success';
-                
-            } catch (error) {
-                console.error('Ошибка:', error);
-                grid.innerHTML = `
-                    <div class="empty-news">
-                        <span>⚠️</span>
-                        Не удалось загрузить новости.<br>
-                        <small style="color: #D4A017;">Проверьте интернет-соединение.</small>
-                        <br><br>
-                        <button onclick="loadNews()" style="background: #FFD700; color: #5C0000; border: none; padding: 10px 25px; border-radius: 8px; font-weight: bold; cursor: pointer;">
-                            🔄 Попробовать снова
-                        </button>
-                    </div>
-                `;
-                status.textContent = '❌ Ошибка загрузки';
-                status.className = 'sync-status error';
-            }
-        }
-
-        // ==============================================
-        // ПАРСИНГ CSV
-        // ==============================================
-        
-        function parseCSV(csvText) {
-            const lines = csvText.split('\n').filter(line => line.trim() !== '');
-            if (lines.length < 2) return [];
-            
-            const data = [];
-            let isFirstRow = true;
-            
-            for (const line of lines) {
-                const values = parseCSVLine(line);
-                
-                if (isFirstRow) {
-                    isFirstRow = false;
-                    continue;
-                }
-                
-                if (values.length >= 6) {
-                    const news = {
-                        id: values[0] || data.length + 1,
-                        title: values[1] || 'Без заголовка',
-                        text: values[2] || 'Текст отсутствует',
-                        image: values[3] || '',
-                        tag: values[4] || 'Обычная',
-                        date: values[5] || new Date().toLocaleDateString('ru-RU')
-                    };
-                    data.push(news);
-                }
-            }
-            
-            return data.reverse();
-        }
-
-        function parseCSVLine(line) {
-            const result = [];
-            let current = '';
-            let inQuotes = false;
-            
-            for (let i = 0; i < line.length; i++) {
-                const char = line[i];
-                if (char === '"') {
-                    inQuotes = !inQuotes;
-                } else if (char === ',' && !inQuotes) {
-                    result.push(current.trim());
-                    current = '';
-                } else {
-                    current += char;
-                }
-            }
-            result.push(current.trim());
-            return result;
-        }
-
-        // ==============================================
-        // ОТОБРАЖЕНИЕ НОВОСТЕЙ
-        // ==============================================
-        
-        function renderNews(newsData, grid) {
-            grid.innerHTML = newsData.map((news, index) => {
-                let imageHtml = '';
-                if (news.image && news.image.trim() !== '' && news.image.startsWith('http')) {
-                    imageHtml = `<img src="${news.image}" alt="${news.title}" class="news-image" onerror="this.style.display='none'">`;
-                } else if (news.image && news.image.trim() !== '' && news.image.startsWith('data:image')) {
-                    imageHtml = `<img src="${news.image}" alt="${news.title}" class="news-image">`;
-                } else if (news.image && news.image.trim() !== '') {
-                    imageHtml = `<div class="news-image-placeholder">📷 ${news.image}</div>`;
-                } else {
-                    imageHtml = `<div class="news-image-placeholder">📷 Фото не добавлено</div>`;
-                }
-                
-                let tagClass = 'tag';
-                let tagText = news.tag;
-                if (news.tag.includes('Важная')) tagClass = 'tag tag-important';
-                else if (news.tag.includes('Событие')) tagClass = 'tag tag-event';
-                else if (news.tag.includes('Обновление')) tagClass = 'tag tag-update';
-                else if (news.tag.includes('Анонс')) tagClass = 'tag tag-announce';
-                
-                // Номер новости для удаления (по индексу в массиве)
-                const newsIndex = newsData.length - 1 - index;
-                
-                return `
-                    <article class="news-card" id="news-${news.id}">
-                        <div class="news-date">📅 ${news.date}</div>
-                        <h2>${news.title}</h2>
-                        ${imageHtml}
-                        <p>${news.text}</p>
-                        <div class="news-tags">
-                            <span class="${tagClass}">${tagText}</span>
-                        </div>
-                        <button class="delete-btn" onclick="deleteNews(${newsIndex})" title="Удалить новость">✕</button>
-                    </article>
-                `;
-            }).join('');
-        }
-
-        // ==============================================
-        // ДОБАВЛЕНИЕ НОВОСТИ
-        // ==============================================
-        
-        function addNews() {
-            const title = document.getElementById('newsTitle').value.trim();
-            const text = document.getElementById('newsText').value.trim();
-            const tag = document.getElementById('newsTag').value;
-            const image = uploadedImageData || '';
-            
-            if (!title || !text) {
-                alert('⚠️ Пожалуйста, заполните заголовок и текст новости!');
-                return;
-            }
-            
-            // Сохраняем новость в localStorage (как временное хранилище)
-            const tempNews = {
-                id: Date.now(),
-                title: title,
-                text: text,
-                image: image,
-                tag: tag,
-                date: new Date().toLocaleDateString('ru-RU', {
-                    day: 'numeric',
-                    month: 'long',
-                    year: 'numeric'
-                })
-            };
-            
-            // Сохраняем в localStorage
-            let localNews = JSON.parse(localStorage.getItem('localNews') || '[]');
-            localNews.push(tempNews);
-            localStorage.setItem('localNews', JSON.stringify(localNews));
-            
-            // Добавляем в список
-            newsData.push(tempNews);
-            renderNews(newsData, document.getElementById('newsGrid'));
-            
-            // Очищаем форму
-            toggleForm();
-            document.getElementById('newsTitle').value = '';
-            document.getElementById('newsText').value = '';
-            document.getElementById('fileName').textContent = 'Файл не выбран';
-            document.getElementById('imagePreview').className = 'image-preview';
-            uploadedImageData = null;
-            
-            // Обновляем статус
-            const status = document.getElementById('syncStatus');
-            status.textContent = `✅ Новость добавлена! (всего ${newsData.length})`;
-            status.className = 'sync-status success';
-            
-            // Показываем кнопку синхронизации с Google Таблицей
-            showSyncButton();
-        }
-
-        // ==============================================
-        // УДАЛЕНИЕ НОВОСТИ
-        // ==============================================
-        
-        function deleteNews(index) {
-            if (!confirm('Вы уверены, что хотите удалить эту новость?')) return;
-            
-            // Удаляем из массива
-            const deleted = newsData.splice(index, 1);
-            
-            // Удаляем из localStorage
-            let localNews = JSON.parse(localStorage.getItem('localNews') || '[]');
-            localNews = localNews.filter(n => n.id !== deleted[0].id);
-            localStorage.setItem('localNews', JSON.stringify(localNews));
-            
-            // Перерисовываем
-            renderNews(newsData, document.getElementById('newsGrid'));
-            
-            const status = document.getElementById('syncStatus');
-            status.textContent = `🗑️ Новость удалена (осталось ${newsData.length})`;
-            status.className = 'sync-status warning';
-        }
-
-        // ==============================================
-        // ПРЕДПРОСМОТР ФОТО
-        // ==============================================
-        
-        function previewImage(event) {
-            const file = event.target.files[0];
-            if (!file) return;
-            
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const preview = document.getElementById('imagePreview');
-                preview.src = e.target.result;
-                preview.className = 'image-preview show';
-                uploadedImageData = e.target.result;
-                document.getElementById('fileName').textContent = `✅ ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
-            };
-            reader.readAsDataURL(file);
-        }
-
-        // ==============================================
-        // ПОКАЗ/СКРЫТИЕ ФОРМЫ
-        // ==============================================
-        
-        function toggleForm() {
-            const form = document.getElementById('addNewsForm');
-            form.classList.toggle('active');
-        }
-
-        // ==============================================
-        // СИНХРОНИЗАЦИЯ С GOOGLE
-        // ==============================================
-        
-        function showSyncButton() {
-            const status = document.getElementById('syncStatus');
-            if (!document.getElementById('syncToGoogleBtn')) {
-                const syncBtn = document.createElement('button');
-                syncBtn.id = 'syncToGoogleBtn';
-                syncBtn.innerHTML = '📤 Сохранить в Google Таблицу (для всех)';
-                syncBtn.style.cssText = `
-                    background: #FFD700;
-                    color: #5C0000;
-                    border: none;
-                    padding: 10px 20px;
-                    border-radius: 8px;
-                    font-weight: bold;
-                    cursor: pointer;
-                    margin-left: 15px;
-                    font-size: 0.9rem;
-                `;
-                syncBtn.onclick = syncToGoogle;
-                status.appendChild(syncBtn);
-            }
-        }
-
-        function syncToGoogle() {
-            // Получаем все новости из localStorage
-            const localNews = JSON.parse(localStorage.getItem('localNews') || '[]');
-            
-            if (localNews.length === 0) {
-                alert('Нет новостей для синхронизации!');
-                return;
-            }
-            
-            // Создаём CSV для Google Sheets
-            let csv = 'ID,Заголовок,Текст,Фото,Тег,Дата\n';
-            localNews.forEach((news, index) => {
-                const row = [
-                    index + 1,
-                    `"${news.title}"`,
-                    `"${news.text}"`,
-                    `"${news.image || ''}"`,
-                    `"${news.tag}"`,
-                    `"${news.date}"`
-                ].join(',');
-                csv += row + '\n';
-            });
-            
-            // Скачиваем CSV файл
-            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'news_for_google_sheet.csv';
-            link.click();
-            
-            alert(`
-✅ CSV файл создан!
-
-📋 Инструкция:
-1. Откройте вашу Google Таблицу
-2. Нажмите "Файл → Импортировать"
-3. Загрузите скачанный CSV файл
-4. Выберите "Заменить текущую таблицу"
-5. Нажмите "Импортировать"
-
-После этого все новости увидят все посетители!
-            `);
-            
-            // Открываем Google Таблицу
-            window.open(GOOGLE_SHEET_EDIT_URL, '_blank');
-        }
-
-        // ==============================================
-        // ЗАГРУЗКА ЛОКАЛЬНЫХ НОВОСТЕЙ
-        // ==============================================
-        
-        function loadLocalNews() {
-            const localNews = JSON.parse(localStorage.getItem('localNews') || '[]');
-            if (localNews.length > 0) {
-                // Добавляем локальные новости к загруженным
-                const existingIds = new Set(newsData.map(n => n.id));
-                localNews.forEach(news => {
-                    if (!existingIds.has(news.id)) {
-                        newsData.push(news);
-                    }
-                });
-                renderNews(newsData, document.getElementById('newsGrid'));
-            }
-        }
-
-        // ==============================================
-        // ЗАПУСК
-        // ==============================================
-        
-        window.onload = function() {
-            loadNews();
-            
-            // Загружаем локальные новости после загрузки с сервера
-            setTimeout(() => {
-                loadLocalNews();
-            }, 1000);
-        };
-    </script>
 </body>
 </html>
